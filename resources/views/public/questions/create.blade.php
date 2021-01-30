@@ -12,7 +12,7 @@
             <div class="form-group row">
                 <div class="form-group col-12">
                     <label for="title">Title</label>
-                    <input type="text" placeholder="Escribe un título..." id="title" name="title" class="form-control">
+                    <input type="text" placeholder="Enter your title" id="title" name="title" class="form-control">
                     @if($errors->has('content'))
                         <div>
                             @foreach($errors->get('content') as $message)
@@ -59,7 +59,7 @@
             <div class="form-group row">
                 <div class="form-group col-md-6">
                     <label for="hashtagInput">Tags</label>
-                    <input type="text" placeholder="Write labels..." id="hashtagInput" name="hashtag"
+                    <input type="text" placeholder="Write keywords" id="hashtagInput" name="hashtag"
                            class="form-control">
                     @if($errors->has('hashtag'))
                         @foreach($errors->get('hashtag') as $message)

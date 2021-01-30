@@ -9,7 +9,7 @@
             <p></p>
                 @endforeach
         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseReply">
-            Responder</button>
+            Answer</button>
         <div class="collapse" id="collapseReply">
             @include('public.partials.comments')
         </div>

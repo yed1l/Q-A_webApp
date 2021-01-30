@@ -6,9 +6,9 @@
         <p class="card-subtitle"><span class="badge badge-warning">{{ $question->category }}</span></p>
         @include('admin.partials.hashtag')
     </div>
-    <p class="card-body">{{$question->content}}</p>
+    <h4 class="card-body">{{$question->content}}</h4>
 
     <p class="container">
-        Created at{{ $question->created_at }} — {{ $question->user->nick }} <span class="badge badge-primary">{{$question->user->role}}</span>
+        Created at {{ $question->created_at }} — by {{ $question->user->nick }} <span class="badge badge-primary"> {{$question->user->role}}</span>
     </p>
 </div>

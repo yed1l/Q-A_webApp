@@ -3,9 +3,9 @@
 
     <div class="container">
         <div class="form-group">
-            <label for="content">Write your answer</label>
+            <label for="content">Write your answer!</label>
             <textarea name="content" id="content"
-                      placeholder="Responde a esta pregunta..." class="form-control" rows="5"></textarea>
+                      placeholder="Please answer this question." class="form-control" rows="5"></textarea>
             @if($errors->has('content'))
                 @foreach($errors->get('content') as $message)
                     <div class="alert alert-danger" role="alert">
