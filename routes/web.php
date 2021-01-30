@@ -25,7 +25,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('/questions/{slug}/comments', 'CommentsController@store');
 
     //Read
-    Route::get('/questions/load_data','QuestionsController@cargarDatos');
+
     Route::get('/questions/obtenerDatos', 'QuestionsController@obtenerDatosAjax');
     Route::post('/questions/obtenerCadaDato', 'QuestionsController@obtenerDatosAjaxCadaUno');
     Route::post('/questions/vistaPregunta','QuestionsController@cargarVista');

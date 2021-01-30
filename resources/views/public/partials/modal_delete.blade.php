@@ -9,8 +9,9 @@
                 </button>
             </div>
                 <div class="modal-body">
+                    Are you sure you want to delete the question? You cannot return it.
 
-                    ¿Está seguro de que deseas borrar la pregunta?. No podrá recuperarla.
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
