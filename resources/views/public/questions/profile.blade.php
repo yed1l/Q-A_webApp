@@ -7,7 +7,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Perfil de {{ Auth::user()->nick }}</h1>
+        <h1>Profile {{ Auth::user()->nick }}</h1>
         <span class="col-1"></span>
         <div class="row">
             <div class="col-3">

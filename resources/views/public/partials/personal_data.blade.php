@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="form-group col-6">
-                <label for="name">Nombre</label>
+                <label for="name">Name</label>
                 <input type="text" id="name" class="form-control" placeholder="{{$user->name}}">
             </div>
 
@@ -12,23 +12,23 @@
             </div>
 
             <div class="form-group col-12">
-                <label for="email">Correo</label>
+                <label for="email">email</label>
                 <input type="email" id="email" class="form-control" placeholder="{{$user->email}}">
             </div>
 
             <div class="form-group col-3">
-                <label for="nick">Edad</label>
+                <label for="nick">Age</label>
                 <input type="text" id="age" class="form-control" placeholder="{{$user->age}}">
             </div>
 
             <div class="form-group col-5">
-                <label for="nick">Cambiar contraseña</label>
-                <input type="password" id="password" class="form-control" placeholder="Introduce tu nueva contraseña">
+                <label for="nick">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your new password">
             </div>
 
             <div class="form-group col-4">
-                <label for="nick">Confirmar contraseña</label>
-                <input type="password" id="confirm_password" class="form-control" placeholder="Repite la nueva contraseña">
+                <label for="nick">Confirm Password</label>
+                <input type="password" id="confirm_password" class="form-control" placeholder="Repeat the new password">
             </div>
         </div>
         <input type="submit" value="Actualizar" class="btn btn-primary btn-lg mt-3">

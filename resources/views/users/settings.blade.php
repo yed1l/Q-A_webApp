@@ -4,7 +4,7 @@
 @endpush
 @section('content')
     <div class="container">
-        <h1>Configuración de {{ Auth::user()->nick }}</h1>
+        <h1>Configuration {{ Auth::user()->nick }}</h1>
         <span class="col-1"></span>
         <div class="row">
             <div class="col-3">

@@ -11,7 +11,7 @@
         <div class="container">
             <div class="form-group row">
                 <div class="form-group col-12">
-                    <label for="title">Título</label>
+                    <label for="title">Title</label>
                     <input type="text" placeholder="Escribe un título..." id="title" name="title" class="form-control">
                     @if($errors->has('content'))
                         <div>
@@ -31,16 +31,16 @@
 
             <div class="form-group row">
                 <div class="form-group col-md-6">
-                    <label for="category">Selecciona categoría</label>
+                    <label for="category">Category</label>
                     <select class="form-control" name="category" id="category">
                         <option value="" selected>...</option>
-                        <option value="Sociedad">Sociedad</option>
-                        <option value="Tecnología">Tecnología</option>
-                        <option value="Ciencia">Ciencia</option>
-                        <option value="Cultura">Cultura</option>
-                        <option value="Ocio">Ocio</option>
-                        <option value="Deportes">Deportes</option>
-                        <option value="Moda">Moda</option>
+                        <option value="Society">Society</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Science">Science</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Health">Health</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Fashion">Fashion</option>
                         <option value="General">General</option>
                     </select>
                     @if($errors->has('category'))
@@ -58,8 +58,8 @@
 
             <div class="form-group row">
                 <div class="form-group col-md-6">
-                    <label for="hashtagInput">Etiquetas</label>
-                    <input type="text" placeholder="Escribe etiquetas..." id="hashtagInput" name="hashtag"
+                    <label for="hashtagInput">Tags</label>
+                    <input type="text" placeholder="Write labels..." id="hashtagInput" name="hashtag"
                            class="form-control">
                     @if($errors->has('hashtag'))
                         @foreach($errors->get('hashtag') as $message)
@@ -72,9 +72,9 @@
             </div>
 
             <div class="form-group">
-                <label for="content">Escribe tu pregunta</label>
+                <label for="content">Enter your question</label>
                 <textarea name="content" id="content"
-                          placeholder="Máximo de 500 caracteres" class="form-control" rows="10"></textarea>
+                          placeholder="1000 characters maximum" class="form-control" rows="10"></textarea>
                 @if($errors->has('content'))
                     @foreach($errors->get('content') as $message)
                         <div class="alert alert-danger" role="alert">

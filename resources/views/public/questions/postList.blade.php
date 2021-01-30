@@ -1,10 +1,10 @@
 <table class="table table-striped">
     <thead class="thead-dark">
     <tr>
-        <th scope="col">Pregunta</th>
-        <th scope="col">Fecha de creación</th>
-        <th scope="col">Editar</th>
-        <th scope="col">Borrar</th>
+        <th scope="col">Question</th>
+        <th scope="col">Date of creation</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
     </tr>
     </thead>
     <tbody>

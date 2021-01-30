@@ -21,7 +21,7 @@
                     <div class="container">
                         <div class="form-group row">
                             <div class="form-group col-12">
-                                <label for="title">Título</label>
+                                <label for="title">Title</label>
                                 <input type="text" placeholder="{{$question->title}}" id="title" name="title"
                                        class="form-control">
                                 @if($errors->has('content'))
@@ -41,16 +41,16 @@
 
                         <div class="form-group row">
                             <div class="form-group col-md-6">
-                                <label for="category">Selecciona categoría</label>
+                                <label for="category">Category</label>
                                 <select class="form-control" name="category" id="category">
-                                    <option value="" selected>{{$question->category}}</option>
-                                    <option value="Sociedad">Sociedad</option>
-                                    <option value="Tecnología">Tecnología</option>
-                                    <option value="Ciencia">Ciencia</option>
-                                    <option value="Cultura">Cultura</option>
-                                    <option value="Ocio">Ocio</option>
-                                    <option value="Deportes">Deportes</option>
-                                    <option value="Moda">Moda</option>
+                                    <option value="" selected>...</option>
+                                    <option value="Society">Society</option>
+                                    <option value="Technology">Technology</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Culture">Culture</option>
+                                    <option value="Health">Health</option>
+                                    <option value="Sport">Sport</option>
+                                    <option value="Fashion">Fashion</option>
                                     <option value="General">General</option>
                                 </select>
                                 @if($errors->has('category'))

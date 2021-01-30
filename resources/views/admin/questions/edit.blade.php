@@ -7,7 +7,7 @@
 @section('content')
 
     <div class="container">
-        <h1>Editando: {{$question->title}}</h1>
+        <h1>Edit: {{$question->title}}</h1>
         <span class="col-1"></span>
         <div class="row">
             <div class="col-3">
@@ -23,7 +23,7 @@
                     <div class="container">
                         <div class="form-group row">
                             <div class="form-group col-12">
-                                <label for="title">Título</label>
+                                <label for="title">Title</label>
                                 <input type="text" placeholder="{{$question->title}}" id="title" name="title"
                                        class="form-control">
                                 @if($errors->has('title'))
@@ -44,16 +44,16 @@
 
                         <div class="form-group row">
                             <div class="form-group col-md-6">
-                                <label for="category">Selecciona categoría</label>
+                                <label for="category">Category</label>
                                 <select class="form-control" name="category" id="category">
                                     <option value="" selected>{{$question->category}}</option>
-                                    <option value="Sociedad">Sociedad</option>
-                                    <option value="Tecnología">Tecnología</option>
-                                    <option value="Ciencia">Ciencia</option>
-                                    <option value="Cultura">Cultura</option>
-                                    <option value="Ocio">Ocio</option>
-                                    <option value="Deportes">Deportes</option>
-                                    <option value="Moda">Moda</option>
+                                    <option value="Society">Society</option>
+                                    <option value="Technology">Technology</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Culture">Culture</option>
+                                    <option value="Health">Health</option>
+                                    <option value="Sport">Sport</option>
+                                    <option value="Fashion">Fashion</option>
                                     <option value="General">General</option>
                                 </select>
                                 @if($errors->has('category'))
@@ -71,7 +71,7 @@
 
                         <div class="form-group row">
                             <div class="form-group col-md-6">
-                                <label for="hashtagInput">Etiquetas</label>
+                                <label for="hashtagInput">Tags</label>
                                 <input type="text" placeholder="{{$question->hashtag}}" id="hashtagInput" name="hashtag"
                                        class="form-control">
                                 @if($errors->has('hashtag'))
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="content">Escribe tu pregunta</label>
+                            <label for="content">Write your question</label>
                             <textarea name="content" id="content"
                                       placeholder="{{$question->content}}" class="form-control" rows="10"></textarea>
                             @if($errors->has('content'))

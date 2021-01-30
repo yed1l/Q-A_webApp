@@ -3,7 +3,7 @@
 
     <div class="container">
         <div class="form-group">
-            <label for="content">Escribe tu respuesta</label>
+            <label for="content">Write your answer</label>
             <textarea name="content" id="content"
                       placeholder="Tu respuesta" class="form-control" rows="5"></textarea>
             @if($errors->has('content'))

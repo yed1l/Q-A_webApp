@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Perfil de administración de {{ Auth::user()->nick }}</h1>
+        <h1>Management Profile of {{ Auth::user()->nick }}</h1>
         <span class="col-1"></span>
         <div class="row main-area">
             <div class="col-md-3">

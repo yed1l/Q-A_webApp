@@ -9,6 +9,6 @@
     <p class="card-body">{{$question->content}}</p>
 
     <p class="container">
-        Creado el {{ $question->created_at }} — {{ $question->user->nick }} <span class="badge badge-primary">{{$question->user->role}}</span>
+        Created at{{ $question->created_at }} — {{ $question->user->nick }} <span class="badge badge-primary">{{$question->user->role}}</span>
     </p>
 </div>
