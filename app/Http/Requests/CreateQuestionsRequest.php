@@ -72,7 +72,8 @@ class CreateQuestionsRequest extends FormRequest
     protected function mensajesCategoria()
     {
         $mensajes = array();
-        $mensajes['category.required'] = 'Por favor, selecciona una categoría válida';
+        $mensajes['category.required'] = 'Please select a valid category
+';
         return $mensajes;
     }
 
@@ -84,10 +85,13 @@ class CreateQuestionsRequest extends FormRequest
     protected function mensajesContenido()
     {
         $mensajes = array();
-        $mensajes['content.required'] = 'El contenido es erróneo';
-        $mensajes['content.max'] = 'El número máximo de caracteres es 1000';
-        $mensajes['content.min'] = 'El número mínimo de caracteres es 15';
-        $mensajes['content.string'] = 'El formato no es válido';
+        $mensajes['content.required'] = 'The content is wrong
+';
+        $mensajes['content.max'] = 'The maximum number of characters is 1000
+';
+        $mensajes['content.min'] = 'The minimum number of characters is 15';
+        $mensajes['content.string'] = 'The format is not valid
+';
         return $mensajes;
     }
 
