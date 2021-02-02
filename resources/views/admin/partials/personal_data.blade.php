@@ -23,15 +23,15 @@
 
             <div class="form-group col-5">
                 <label for="nick" class="text-white">Change Password</label>
-                <input type="password" id="password" class="form-control" placeholder="Introduce tu nueva contraseña">
+                <input type="password" id="password" class="form-control" placeholder="Enter your new password">
             </div>
 
             <div class="form-group col-4">
                 <label for="nick" class="text-white">Confirm Password</label>
-                <input type="password" id="confirm_password" class="form-control" placeholder="Repite la nueva contraseña">
+                <input type="password" id="confirm_password" class="form-control" placeholder="Confirm the new password">
             </div>
         </div>
-        <input type="submit" value="Actualizar" class="btn btn-primary btn-lg mt-3">
+        <input type="submit" value="Update" class="btn btn-primary btn-lg mt-3">
     </div>
 </form>
 

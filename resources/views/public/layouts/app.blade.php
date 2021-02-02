@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'QA') }}</title>
+    <title>{{ config('', 'Surap al') }}</title>
 
 
     <!-- Scripts -->
@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'QA') }}
+                    {{ config("Surap al", 'Q&A') }}
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,9 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="{{route('admin.panel')}}" class="dropdown-item"><i class="fas fa-toolbox"></i> Administrator Panel</a>
+                                    @if (Auth::user() && Auth::user()->role == 'admin')
+                                        <a href="{{route('admin.panel')}}" class="dropdown-item"><i class="fas fa-toolbox"></i> Admin Panel</a>
+                                    @endif
                                     <a href="{{route('crearPregunta')}}" class="dropdown-item"><i class="fas fa-plus"></i> Create question</a>
                                     <a href="/user/{{ Auth()->user()->slug }}" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"

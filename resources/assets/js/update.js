@@ -27,7 +27,7 @@ $('.modal-footer').on('click', '.edit', function() {
             if ((data.errors)) {
                 setTimeout(function () {
                     $('#editModal').modal('show');
-                    toastr.error('Error al modificar los datos', 'Alerta de error', {timeOut: 5000});
+                    toastr.error('Data change error', 'Error alert', {timeOut: 5000});
                 }, 500);
 
                 if (data.errors.title) {
@@ -43,7 +43,7 @@ $('.modal-footer').on('click', '.edit', function() {
                     $('.errorContent').text(data.errors.content);
                 }
             } else {
-                toastr.success('Tema editado correctamente!', 'Success Alert', {timeOut: 5000});
+                toastr.success('edited correctly!', 'Success Alert', {timeOut: 5000});
                 $('.item' + data.id).replaceWith("" +
                     "<tr class='item" + data.id + "'>" +
                     "<td>" + data.id + "</td>" +

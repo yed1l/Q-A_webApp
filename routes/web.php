@@ -46,6 +46,7 @@ Route::group(['middleware' => 'auth'], function(){
 
             //Admin routes
             Route::get('/admin', 'AdminController@index')->name('admin.panel');
+
             Route::get('/admin/questions', 'QuestionsController@adminIndex')->name('admin.questions');
             Route::get('/admin/questions/create', 'QuestionsController@create');
             Route::post('/admin/questions', 'QuestionsController@store');

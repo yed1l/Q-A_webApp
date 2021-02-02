@@ -157,10 +157,7 @@ class QuestionsController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function cargarDatos()
-    {
-        return view('admin.questions.load_data');
-    }
+
 
     /**
      * Update the specified resource in storage.

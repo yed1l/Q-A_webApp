@@ -59,7 +59,7 @@
             <div class="form-group row">
                 <div class="form-group col-md-6">
                     <label for="hashtagInput">Tags</label>
-                    <input type="text" placeholder="Write labels..." id="hashtagInput" name="hashtag"
+                    <input type="text" placeholder="Write tag" id="hashtagInput" name="hashtag"
                            class="form-control">
                     @if($errors->has('hashtag'))
                         @foreach($errors->get('hashtag') as $message)

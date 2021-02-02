@@ -50,11 +50,11 @@ class UserController extends Controller
      */
     public function show($slug)
     {
-        //first() devuelve el primer resultado. get() te devuelve una coleccion
+
         $user = User::where('slug', $slug)->first();
-        //comprobamos que el user_id del question coincide con el id del user
+
         $questions = Question::where('user_id', $user->slug)->get();
-        //dd($questions);
+
 
         return view('public.questions.profile',
             [

@@ -52,10 +52,14 @@ class CreateQuestionsRequest extends FormRequest
     protected function mensajesTitulo()
     {
         $mensajes = array();
-        $mensajes['title.required'] = 'Por favor, escribe un título válido';
-        $mensajes['title.max'] = 'El número máximo de caracteres es 200';
-        $mensajes['title.min'] = 'El número mínimo de caracteres es 15';
-        $mensajes['title.string'] = 'El formato no es válido';
+        $mensajes['title.required'] = 'Please enter a valid title
+';
+        $mensajes['title.max'] = 'The maximum number of characters is 200
+';
+        $mensajes['title.min'] = 'The minimum number of characters is 15
+';
+        $mensajes['title.string'] = 'The format is not valid
+';
 
         return $mensajes;
     }

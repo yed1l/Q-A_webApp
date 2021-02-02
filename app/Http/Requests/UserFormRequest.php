@@ -93,10 +93,14 @@ class UserFormRequest extends FormRequest
     protected function messagesName()
     {
         $messages = array();
-        $messages['name.required'] = 'Por favor, escribe un nombre válido';
-        $messages['name.max'] = 'El número máximo de caracteres es 100';
-        $messages['name.min'] = 'El número mínimo de caracteres es 4';
-        $messages['name.string'] = 'El formato no es válido';
+        $messages['name.required'] = 'Please enter a valid name
+';
+        $messages['name.max'] = 'The maximum number of characters is 100
+';
+        $messages['name.min'] = 'The minimum number of characters is 4
+';
+        $messages['name.string'] = 'The format is not valid
+';
 
         return $messages;
     }
