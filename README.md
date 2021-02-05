@@ -1,3 +1,3 @@
 # Q-A_webApp
-WEBAPP like stackoverflow on Laravel
+ question&answer webapp like stackoverflow on Laravel
 
