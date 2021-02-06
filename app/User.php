@@ -6,9 +6,11 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Auth;
 
+
 class User extends Authenticatable
 {
     use Notifiable;
+
 
     /**
      * The attributes that are mass assignable.
@@ -18,6 +20,9 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password', 'nick', 'age', 'slug'
     ];
+
+
+
 
     /**
      * The attributes that should be hidden for arrays.

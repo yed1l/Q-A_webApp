@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -10,6 +11,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 
 
 Route::get('/', 'HomeController@index')->name('home');
@@ -28,6 +31,7 @@ Route::group(['middleware' => 'auth'], function(){
 
 
     Route::get('/questions/{question}', 'QuestionsController@show');
+
 
 
 
@@ -60,5 +64,7 @@ Route::group(['middleware' => 'auth'], function(){
 
     Route::post('/questions/validate','QuestionsController@validarAjax');
     Route::get('/questions','QuestionsController@show');
+
+
 
 
